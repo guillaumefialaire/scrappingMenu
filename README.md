@@ -1,13 +1,14 @@
-### Comment lancer
+### ETAPE 1 : 
+- Ouvrir l'inspecteur sur la page du navigateur (f12 ou clic droit inspecter) sur le menu
+- Aller dans l’onglet de l’inspecteur de code
+- Coller la fonction dans la console
 
-- ouvrir l'inspecteur sur la page du navigateur (f12 ou clic droit inspecter) sur le menu
-- chercher la valeur de la classe du menu que tu veux scrapper (ex : container)
-- aller dans l'onglet console de l'inspecteur
-- coller la fonction dans la console
-- lancer extractHrefAndContent([classe]) avec [classe] le nom de la classe du menu 
+### ETAPE 2 : 
+- Chercher la valeur de la classe du menu que tu veux scrapper (ex : class=**container**)
+- Coller **extractHrefAndContent(".CLASSE")** dans la console et exécuter
+- Copier l’output
 
-### FONCTION A COPIER COLLER
-```
+### SCRIPT : 
 function extractHrefAndContent(classe){
 let array = [];
 let menu = document.querySelector(classe);
@@ -27,7 +28,6 @@ links.forEach(link => {
     let b = a.replaceAll('"',"");
     let c = b.replaceAll('[',"");
     let d = c.replaceAll(']',"");
-    let e = d.replaceAll(',',' , ');
+    let e = d.replaceAll(',',' | ');
     console.log(e);   
 }
-```
