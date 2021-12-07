@@ -8,7 +8,8 @@
 - Coller **extractHrefAndContent(".CLASSE")** dans la console et exécuter
 - Copier l’output
 
-### SCRIPT : 
+### SCRIPT :
+```
 function extractHrefAndContent(classe){
 let array = [];
 let menu = document.querySelector(classe);
